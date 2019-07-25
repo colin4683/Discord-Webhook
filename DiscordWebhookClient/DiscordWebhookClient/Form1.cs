@@ -105,6 +105,12 @@ namespace DiscordWebhookClient
             WebResponse response = web.GetResponse();
             StreamReader reader = new StreamReader(response.GetResponseStream()); string wResult = reader.ReadLine();
         }
+        public static void SendImage(string url)
+        {
+            WebRequest web = WebRequest.Create("https://chrissite.online/webhook/sendmessage.php?webUrl=" + webUrl + "&botName=" + name + "&avatar=" + avatarurl + "&picture=1&embedImage=" + url);
+            WebResponse response = web.GetResponse();
+            StreamReader reader = new StreamReader(response.GetResponseStream()); string wResult = reader.ReadLine();
+        }
         #endregion
 
 
@@ -112,6 +118,7 @@ namespace DiscordWebhookClient
         private void Button1_Click(object sender, EventArgs e)
         {
             SendMessage(richTextBox1.Text);
+
         }
         #endregion
 
@@ -129,9 +136,53 @@ namespace DiscordWebhookClient
             }
         }
 
-        private void Panel3_Paint(object sender, PaintEventArgs e)
+        private void Button5_Click(object sender, EventArgs e)
         {
+            if (label10.Text == "Image: None")
+            {
+                MessageBox.Show("Please slect an image");
+            }
+            else
+            {
+                string url = ImageURl(openFile.FileName);
+                SendImage(url);
+            }
+        }
+        OpenFileDialog openFile = new OpenFileDialog();
 
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            openFile.Filter = "Image File (*.jpg, *.jpeg, *.png) | *.jpg; *.jpeg; *.png";
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                label10.Text = openFile.SafeFileName;
+            }
+        }
+
+
+        public static string ImageURl(string imageLocation)
+        {
+            string imageUrl = string.Empty;
+            using (var w = new WebClient())
+            {
+                string clientID = "1f9bc62318c10fc";
+                w.Headers.Add("Authorization", "Client-ID " + clientID);
+                var values = new NameValueCollection
+                {
+                     { "image", Convert.ToBase64String(File.ReadAllBytes(imageLocation)) }
+                 };
+
+                byte[] response = w.UploadValues("https://api.imgur.com/3/upload.xml", values);
+
+                var responseXml = XDocument.Load(new MemoryStream(response));
+                return imageUrl = (string)responseXml.Root.Element("link");
+
+            }
+        }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            SendMessage(richTextBox1.Text);
         }
     }
 }

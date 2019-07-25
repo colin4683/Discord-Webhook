@@ -1,0 +1,10 @@
+C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\bin\Release\DiscordWebhookClient.exe.config
+C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\bin\Release\DiscordWebhookClient.exe
+C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\bin\Release\DiscordWebhookClient.pdb
+C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\obj\Release\DiscordWebhookClient.Form1.resources
+C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\obj\Release\DiscordWebhookClient.Properties.Resources.resources
+C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\obj\Release\DiscordWebhookClient.Settings.resources
+C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\obj\Release\DiscordWebhookClient.csproj.GenerateResource.cache
+C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\obj\Release\DiscordWebhookClient.csproj.CoreCompileInputs.cache
+C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\obj\Release\DiscordWebhookClient.exe
+C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\obj\Release\DiscordWebhookClient.pdb
