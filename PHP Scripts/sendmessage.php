@@ -27,9 +27,15 @@ if(isset($_GET['embed']))
 {
 $embed->title($embedTitle);
 $embed->description($embedDescription);
-$embed->color($hex);
+$embed->color($embedColor);
 $webhook->avatar($avatarurl)->username($name)->message($message)->embed($embed)->send();
 }
 
+
+
+if(isset($_GET['regular']))
+{
+	$webhook->avatar($avatarurl)->username($name)->message($message)->send();
+}
 
  ?>

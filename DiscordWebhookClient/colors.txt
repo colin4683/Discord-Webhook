@@ -1,0 +1,4 @@
+background : 20, 20, 20
+panels : 30,30,30
+text-color : white
+button colors : 187, 134, 252

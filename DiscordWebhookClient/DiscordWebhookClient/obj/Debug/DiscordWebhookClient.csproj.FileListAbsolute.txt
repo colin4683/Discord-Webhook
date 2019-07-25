@@ -8,3 +8,4 @@ C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookCl
 C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\obj\Debug\DiscordWebhookClient.csproj.CoreCompileInputs.cache
 C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\obj\Debug\DiscordWebhookClient.exe
 C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\obj\Debug\DiscordWebhookClient.pdb
+C:\Users\chubb\OneDrive\Desktop\Discord Webhook\Discord-Webhook\DiscordWebhookClient\DiscordWebhookClient\obj\Debug\DiscordWebhookClient.Settings.resources
